@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -62,6 +63,7 @@ form input {
   width: 6rem;
   border-radius: 0.5rem;
   border: 1px solid lightgray;
+  box-shadow: 0 0 10px rgba(82, 5, 158, 0.1); /* Add box shadow */
 }
 
 .select-container select {
@@ -75,8 +77,42 @@ form input {
 
 form button {
   height: 3rem;
-  background-color: #af4d98;
-  color: #fff;
+  background-color: #0a75ef;
+  color: #18024b;
   font-size: 1.15rem;
   cursor: pointer;
+}
+:hover button{
+ background-color: rgb(139, 202, 4);
+transition: 1s;
+transition-duration: 1s;
+
+}
+
+
+.h1tag {
+  color: red;
+  font-size: cursive;
+  font-family: monospace;
+  text-align: center;
+}
+
+.p1tag{
+  text-align: center;
+    color: #784602;
+    font-family: cursive;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%; 
+  }
+
+  .dropdown {
+    flex-direction: column; 
+  }
+
+  .select-container {
+    width: 100%; 
+  }
 }
