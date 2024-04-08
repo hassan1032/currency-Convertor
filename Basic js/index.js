@@ -27,7 +27,7 @@ for (currCode in countryList) {
 }
 
 select.addEventListener("change", (evt) => {
-    console.log("evt>>>>>>>>>",evt);
+    // console.log("evt>>>>>>>>>",evt);
     if(evt.target.name === 'from'){
         fromVal= evt.target.value
     }
@@ -59,14 +59,14 @@ const updateExchangeRate = async () => {
         }
         
         let data = await response.json();
-        console.log("data>>>>>>>>>>>>>>", data); // Log the actual data fetched
+        // console.log("data>>>>>>>>>>>>>>", data); // Log the actual data fetched
 
         let rate = data[fromVal.toLowerCase()][toVal.toLocaleLowerCase()]; // data.usd.inr
-        console.log("rate>>>>>>>>>>",rate)
+        // console.log("rate>>>>>>>>>>",rate)
         let finalAmount = amtVal * rate;
         msg.innerText = `${amtVal} ${fromVal} = ${finalAmount} ${toVal}`;
     } catch (error) {
-        console.error('Error fetching data:', error);
+        // console.error('Error fetching data:', error);
         // Handle error, show message to user, etc.
     }
 };
