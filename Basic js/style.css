@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  
+  overflow: hidden;
 }
 
 body {
@@ -13,11 +13,12 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-color: rgb(101 241 119 / 42%);
   padding: 2rem;
   border-radius: 1rem;
   min-height: 45vh;
   width: 40vh;
+  box-shadow: 14px 14px 15px rgb(133 220 239);
 }
 
 form {
@@ -25,12 +26,27 @@ form {
 }
 
 form select,
-button,
-input {
-  width: 100%;
+button {
+  width: 70%;
   border: none;
   outline: none;
-  border-radius: 0.75rem;
+  border-radius: 3.75rem;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.input-1 {
+  display: flex;
+  margin: auto;
+  width: 77%;
+  border-radius: 20px;
+  text-align: center;
+  font-family: cursive;
+  color: #9e5c02;
 }
 
 form input {
@@ -62,10 +78,8 @@ form input {
   align-items: center;
   width: 6rem;
   border-radius: 0.5rem;
-  border: 1px solid lightgray;
-  box-shadow: 0 0 10px rgba(82, 5, 158, 0.1); /* Add box shadow */
+  border: 1px solid rgb(44 65 1);
 }
-
 
 .select-container select {
   font-size: 1rem;
@@ -74,23 +88,28 @@ form input {
 
 .msg {
   margin: 2rem 0 2rem 0;
+  color: rgb(0 0 0);
+  font-weight: 600;
+  font-family: cursive;
+  text-align: center;
 }
 
 form button {
   height: 3rem;
-  background-color: #0a75ef;
-  color: #18024b;
+  background-color: #c57f7f;
+  color: #031e49;
   font-size: 1.15rem;
   cursor: pointer;
-}
-:hover button{
- background-color: rgb(139, 202, 4);
-transition: 1s;
-transition-duration: 1s;
-
-
+  font-weight: 700;
+  font-family: Roboto;
 }
 
+
+:hover button {
+  background-color: rgb(139, 202, 4);
+  transition: 1s;
+  transition-duration: 1s;
+}
 
 .h1tag {
   color: red;
@@ -99,22 +118,61 @@ transition-duration: 1s;
   text-align: center;
 }
 
-.p1tag{
+.p1tag {
   text-align: center;
-    color: #784602;
-    font-family: cursive;
+  color: #784602;
+  font-family: cursive;
 }
 
+.H2Tags {
+  color: #031e3e;
+  font-size: x-large;
+  font-family: system-ui;
+  font-style: oblique;
+  font-kerning: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.p3 {
+  font-size: medium;
+  font-family: cursive;
+  /* margin: 12px; */
+  text-align: center;
+  color: #02244d;
+}
+
+.p2 {
+  font-size: medium;
+  font-family: cursive;
+  margin: 12px;
+  text-align: center;
+  color: #031e3e;
+  font-weight: 900;
+}
+
+body {
+  background-image: url("https://www.shutterstock.com/shutterstock/photos/1869504520/display_1500/stock-photo-currency-exchange-financial-and-banking-in-global-networking-business-concept-businessman-holding-1869504520.jpg");
+  background-repeat: no-repeat;
+  background-position: 0px -34px;
+  background-size: 1268px;
+  background-color: black;
+  
+}
+
+.startpage-background:hover {
+  background-image: url("https://www.shutterstock.com/shutterstock/photos/1869504520/display_1500/stock-photo-currency-exchange-financial-and-banking-in-global-networking-business-concept-businessman-holding-1869504520.jpg")
+}
 @media (max-width: 480px) {
   .container {
-    width: 90%; 
+    width: 90%;
   }
 
   .dropdown {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .select-container {
-    width: 100%; 
+    width: 100%;
   }
 }
