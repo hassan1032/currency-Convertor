@@ -37,12 +37,7 @@ select.addEventListener("change", (evt) => {
   updateFlag(evt.target);
 });
 }
-// fetch(`https://${host}/latest?amount=${amtVal}&from=${fromVal}&to=${toVal}`)
-//   .then(resp => resp.json())
-//   .then((data) => {
-//     console.log(data)
-//     //alert(`${amtVal} ${fromVal} = ${data.rates[`${toVal}`]} ${toVal}`);
-//   });
+
 const updateExchangeRate = async () => {
     let amount = document.querySelector(".amount input");
     let amtVal = amount.value;
